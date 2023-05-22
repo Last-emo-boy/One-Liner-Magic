@@ -1,0 +1,1 @@
+selection_sort = lambda arr: arr if len(arr) <= 1 else [min(arr)] + selection_sort([x for x in arr if x != min(arr)])

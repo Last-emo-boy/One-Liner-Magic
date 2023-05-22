@@ -1,0 +1,1 @@
+pi = 4 * sum(map(lambda n: (-1)**n/(2*n+1), range(10**7)))

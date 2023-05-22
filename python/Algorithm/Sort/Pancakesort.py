@@ -1,0 +1,1 @@
+pancake_sort = lambda arr: arr if len(arr) < 2 else [max(arr)] + pancake_sort(arr[:arr.index(max(arr))][::-1] + arr[arr.index(max(arr))+1:])

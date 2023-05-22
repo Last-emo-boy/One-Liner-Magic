@@ -1,0 +1,1 @@
+radix_sort = lambda lst: lst if len(lst) <= 1 else radix_sort([x for x in lst[1:] if x < lst[0]]) + [lst[0]] + radix_sort([x for x in lst[1:] if x >= lst[0]])

@@ -1,0 +1,1 @@
+bubble_sort = lambda arr: arr if len(arr) <= 1 else bubble_sort([x if x <= arr[1] else arr[1] if x == arr[0] else arr[0] for x in arr[2:]]) + [arr[0]] + bubble_sort([x for x in arr[2:] if x > arr[0]])
